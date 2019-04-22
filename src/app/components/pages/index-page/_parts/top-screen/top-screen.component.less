@@ -1,0 +1,38 @@
+@import "../../../../../../styles/default-export";
+
+.top-screen {
+  height: 100vh;
+  padding: 110px;
+  background: radial-gradient(at 75% 40%, @color-gradient-first, @color-gradient-second);
+  overflow: hidden;
+
+  .part-left {
+    height: 100%;
+
+    .block-content {
+      margin-top: 70%;
+      .box-text {
+        font-size: 50px;
+        color: white;
+      }
+
+      .box-buttons {
+        margin-top: 36px;
+
+        .btn {
+          margin-right: 20px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .part-right {
+    .two-phones {
+      margin-top: 230px;
+    }
+  }
+}

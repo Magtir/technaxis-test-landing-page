@@ -1,0 +1,373 @@
+.hide {
+  display: none !important;
+
+  &--flex {
+    display: none !important;
+  }
+}
+
+.show {
+  display: block !important;
+
+  &--flex {
+    display: flex !important;
+  }
+}
+
+//скрыть только на small
+.hide-small-only {
+  @media (max-width: @middle - 1) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+  @media (min-width: @middle) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+}
+
+//показывать только на small
+.show-small-only {
+  @media (min-width: @middle) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+  @media (min-width: @middle) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+}
+
+///////////////
+.hide-middle-only {
+  @media (max-width: @middle - 1) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+  @media (min-width: @middle) and (max-width: @big - 1) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+  @media (min-width: @big) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+}
+
+//скрывать от middle и больше
+.hide-middle-up {
+  @media (min-width: @middle) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+  @media (max-width: @middle - 1) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+}
+
+//скрывать от middle и меньше
+.hide-middle-down {
+  @media (max-width: @big - 1) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+  @media (min-width: @big) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+}
+
+.show-middle-only {
+  @media (max-width: @middle - 1) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+  @media (min-width: @middle) and (max-width: @big - 1) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+  @media (min-width: @big) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+}
+
+.show-middle-up {
+  @media (min-width: @middle) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+  @media (max-width: @middle - 1) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+}
+
+.show-middle-down {
+  @media (min-width: @big) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+  @media (max-width: @big - 1) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+}
+
+///////////////
+.hide-big-only {
+  @media (max-width: @big - 1) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+  @media (min-width: @big) and (max-width: @large - 1) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+  @media (min-width: @large) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+}
+
+.hide-big-up {
+  @media (min-width: @big) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+  @media (max-width: @big - 1) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+}
+
+.hide-big-down {
+  @media (max-width: @large - 1) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+  @media (min-width: @large) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+}
+
+.show-big-only {
+  @media (max-width: @big - 1) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+  @media (min-width: @big) and (max-width: @large - 1) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+  @media (min-width: @large) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+}
+
+.show-big-up {
+  @media (min-width: @big) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+  @media (max-width: @big - 1) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+}
+
+.show-big-down {
+  @media (max-width: @large - 1) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+  @media (min-width: @large) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+}
+
+///////////////
+.hide-large-only {
+  @media (min-width: @large) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+  @media (max-width: @large - 1) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+}
+
+.show-large-only {
+  @media (min-width: @large) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+  @media (max-width: @large - 1) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+}
+
+///////////////
+//скрывать на middle и big
+.hide-between-middle-big {
+  @media (max-width: @middle - 1) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+  @media (min-width: @middle) and (max-width: @large - 1) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+  @media (min-width: @large) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+}
+
+//показывать на middle и big
+.hide-between-middle-big {
+  @media (max-width: @middle - 1) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+  @media (min-width: @middle) and (max-width: @large - 1) {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+  @media (min-width: @large) {
+    display: none !important;
+
+    &--flex {
+      display: none !important;
+    }
+  }
+}

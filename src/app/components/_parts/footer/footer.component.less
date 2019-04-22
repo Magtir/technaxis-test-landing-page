@@ -1,0 +1,78 @@
+@import "../../../../styles/default-export";
+
+.footer {
+  padding: 144px 0 148px;
+  background-color: @color-bg-dark;
+
+  .list-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .title {
+      color: white;
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .link {
+      color: #787581;
+      font-size: 13px;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .form {
+    .title {
+      color: white;
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .field {
+      position: relative;
+
+      .input {
+        height: 47px;
+        width: 100%;
+        border-radius: 23px;
+        padding: 0 130px 0 20px;
+      }
+
+      .btn {
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        padding: 11px 20px
+      }
+    }
+  }
+
+  .social-list {
+    margin-top: 19px;
+
+    .social-item {
+      margin-right: 19px;
+    }
+  }
+
+  .block-company {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+
+    .logo-img {
+      margin-right: 20px;
+    }
+
+    .box-text {
+      color: white;
+      font-size: 13px;
+      line-height: 23px;
+    }
+  }
+}

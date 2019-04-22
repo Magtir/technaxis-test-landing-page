@@ -1,0 +1,178 @@
+@import "../../../../../../styles/default-export";
+
+.testimonials {
+  padding: 460px 0 100px;
+  background-color: white;
+
+  .description-section {
+    font-size: 15px;
+    margin-top: 28px;
+    text-align: center;
+    color: @color-text-grey;
+    line-height: 22px;
+  }
+
+  .holder-slider {
+    position: relative;
+
+    .block-slider-buttons {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      z-index: 1;
+
+      .slider-button {
+        width: 57px;
+        height: 32px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: absolute;
+        cursor: pointer;
+
+        &.left {
+          background-image: url("/assets/img/arrow-left.png");
+          left: -120px;
+        }
+
+        &.right {
+          background-image: url("/assets/img/arrow-right.png");
+          right: -120px;
+        }
+      }
+    }
+
+    .block-slider {
+      height: 388px;
+      margin-top: 72px;
+      overflow: hidden;
+
+      .aniT {
+        transition: all 1s linear;
+      }
+
+      .transition {
+        transition: all 0.3s ease-in-out !important;
+      }
+
+      .carousel {
+        color: white;
+        margin: 0 (-@large-distance-between-columns / 2);
+
+        .content {
+          display: flex;
+          height: 100%;
+
+          .item {
+            width: 100%;
+            padding: 0 @large-distance-between-columns / 2;
+            overflow: hidden;
+            display: block;
+
+            &.visible {
+              opacity: 1;
+            }
+
+            .ava {
+              width: 60px;
+              height: 60px;
+              background-size: cover;
+              background-position: 50% 50%;
+              background-repeat: no-repeat;
+              margin: 0 auto;
+              border-radius: 100%;
+              overflow: hidden;
+              position: relative;
+              z-index: 1;
+            }
+
+            .main-part {
+              border: 1px solid #e0e0e0;
+              border-radius: 10px;
+              margin-top: -30px;
+              padding: 48px 50px;
+
+              .name {
+                text-align: center;
+                font-size: 23px;
+                color: @color-text-grey;
+              }
+
+              .rating {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+
+                .star {
+                  width: 18px;
+                  height: 18px;
+                  background-image: url("/assets/img/star-empty.png");
+                  margin-right: 4px;
+
+                  &:last-child {
+                    margin-right: 0;
+                  }
+                }
+
+                &--1, &--2, &--3, &--4, &--5 {
+                  .star:nth-child(1) {
+                    background-image: url("/assets/img/star-fill.png");
+                  }
+                }
+
+                &--2, &--3, &--4, &--5 {
+                  .star:nth-child(2) {
+                    background-image: url("/assets/img/star-fill.png");
+                  }
+                }
+
+                &--3, &--4, &--5 {
+                  .star:nth-child(3) {
+                    background-image: url("/assets/img/star-fill.png");
+                  }
+                }
+
+                &--4, &--5 {
+                  .star:nth-child(4) {
+                    background-image: url("/assets/img/star-fill.png");
+                  }
+                }
+
+                &--5 {
+                  .star:nth-child(5) {
+                    background-image: url("/assets/img/star-fill.png");
+                  }
+                }
+              }
+
+              .comment {
+                font-size: 15px;
+                line-height: 23px;
+                margin-top: 25px;
+              }
+
+              .more {
+                font-size: 15px;
+                color: @color-text-red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .block-companies {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .img-company {
+      filter: grayscale(100%);
+      opacity: 0.3;
+      flex: 0 0 auto;
+    }
+  }
+}

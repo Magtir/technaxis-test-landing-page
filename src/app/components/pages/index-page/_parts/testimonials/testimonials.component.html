@@ -1,0 +1,71 @@
+<section class="testimonials">
+    <h2 class="title-section title-section--decoration">
+        As far as we know<br>
+        people simply love Suada
+    </h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="description-section">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    deleniti atque
+                    corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+                    sunt in
+                    culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container not-row">
+
+        <div class="holder-slider">
+            <div class="block-slider-buttons">
+                <div class="slider-button left" (click)="prev()" *ngIf="index > 0"></div>
+                <div class="slider-button right" (click)="next()" *ngIf="index < slides.length - 1"></div>
+            </div>
+
+            <div class="block-slider">
+                <ngx-hm-carousel #carousel
+                                 [(ngModel)]="index"
+                                 [show-num]="3"
+                                 [data]="slides"
+                                 [drag-many]="true"
+                                 class="carousel c-accent">
+
+                    <section ngx-hm-carousel-container class="content">
+                        <article class="item cursor-pointer"
+                                 ngx-hm-carousel-item
+                                 *ngFor="let slide of slides">
+                            <div class="ava"
+                                 [style.backgroundImage]="'url('+slide.ava+')'">
+                            </div>
+                            <div class="main-part">
+                                <div class="name font-light">{{slide.name}}</div>
+                                <div [class]="'rating rating--' + slide.rating">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                                <div class="comment">{{slide.comment}}</div>
+                                <a href="#" class="more font-bold">Read more</a>
+                            </div>
+                        </article>
+                        <ng-template #infiniteContainer></ng-template>
+                    </section>
+                </ngx-hm-carousel>
+            </div>
+        </div>
+
+        <div class="block-companies">
+            <img src="/assets/img/company-1.png" class="img-company" alt="">
+            <img src="/assets/img/company-2.png" class="img-company" alt="">
+            <img src="/assets/img/company-3.png" class="img-company" alt="">
+            <img src="/assets/img/company-4.png" class="img-company" alt="">
+            <img src="/assets/img/company-5.png" class="img-company" alt="">
+            <img src="/assets/img/company-6.png" class="img-company" alt="">
+        </div>
+    </div>
+</section>

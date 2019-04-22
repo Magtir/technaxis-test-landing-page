@@ -1,0 +1,41 @@
+.header {
+  .container {
+    position: relative;
+
+    .holder {
+      padding-top: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .block-logo {
+        display: flex;
+        align-items: center;
+
+        .logo-img {
+          margin-right: 14px;
+          box-shadow: 3px 2px 16px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-text {
+          color: white;
+        }
+      }
+
+      .block-main-menu {
+        .item-main-menu {
+          margin-right: 40px;
+          color: white;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

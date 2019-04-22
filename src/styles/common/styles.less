@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: "Aktiv Grotesk W01 Regular";
+  color: @color-text-black;
+}
+
+.font-light {
+  font-family: "Aktiv Grotesk W01 Light";
+}
+
+.font-regular {
+  font-family: "Aktiv Grotesk W01 Regular";
+}
+
+.font-bold {
+  font-family: "Aktiv Grotesk W01 Bold";
+}
+
+.font-x-bold {
+  font-family: "Aktiv Grotesk W01 XBold";
+}
+
+.form-field-error {
+  color: red;
+  margin-bottom: 2px;
+  display: block;
+  font-size: 14px;
+}
+
+.form-error {
+  color: red;
+  margin: 2px 0 5px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.section-default {
+  padding-top: 150px;
+
+  &--dark {
+    background-color: @color-bg-dark;
+  }
+}
+
+.title-section {
+  font-family: "Aktiv Grotesk W01 Light";
+  font-size: 40px;
+  text-align: center;
+
+  &--white {
+    color: white;
+  }
+
+  &--decoration {
+    &:after {
+      content: '';
+      display: block;
+      width: 62px;
+      height: 6px;
+      background-image: url("/assets/img/title-decoration.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      margin: 20px auto 0;
+    }
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}

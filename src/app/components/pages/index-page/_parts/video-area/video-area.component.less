@@ -1,0 +1,114 @@
+.video-area {
+  margin-bottom: -312px;
+
+  .title-section {
+  }
+
+  .block-list {
+    margin-top: 95px;
+
+    .item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+      padding-right: 95px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .img {
+        margin-right: 20px;
+      }
+
+      .box-text {
+        .title {
+          color: white;
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+
+        .description {
+          margin-top: 2px;
+          color: white;
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+
+  .block-video {
+    margin-top: 150px;
+    height: 625px;
+    background-color: gray;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.4);
+    background-size: 101%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    &:hover {
+      .play {
+        background-color: rgba(253, 88, 114, 0.2);
+        width: 200px;
+        height: 200px;
+
+        &:before {
+          width: 140px;
+          height: 140px;
+          background-color: rgba(253, 88, 114, 0.4);
+        }
+
+        &:after {
+          content: '';
+          width: 90px;
+          height: 90px;
+        }
+      }
+    }
+
+    .play {
+      width: 180px;
+      height: 180px;
+      position: absolute;
+      background-color: rgba(253, 88, 114, 0.1);
+      border-radius: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 200ms;
+
+      &:before {
+        content: '';
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(253, 88, 114, 0.3);
+        border-radius: 100%;
+        transition: all 500ms;
+      }
+
+      &:after {
+        content: '';
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(253, 88, 114);
+        border-radius: 100%;
+        background-image: url("/assets/img/play.png");
+        background-position: 53% 50%;
+        background-repeat: no-repeat;
+        transition: all 800ms;
+      }
+    }
+  }
+}

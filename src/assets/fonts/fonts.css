@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Aktiv Grotesk W01 Light";
+    src: url("./AktivGroteskW01-Light/e6d74b86b1acaca5cc4800067427d62b.eot"); /* IE9*/
+    src: url("./AktivGroteskW01-Light/e6d74b86b1acaca5cc4800067427d62b.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./AktivGroteskW01-Light/e6d74b86b1acaca5cc4800067427d62b.woff2") format("woff2"), /* chrome、firefox */
+    url("./AktivGroteskW01-Light/e6d74b86b1acaca5cc4800067427d62b.woff") format("woff"), /* chrome、firefox */
+    url("./AktivGroteskW01-Light/e6d74b86b1acaca5cc4800067427d62b.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("./AktivGroteskW01-Light/e6d74b86b1acaca5cc4800067427d62b.svg#Aktiv Grotesk W01 Light") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: "Aktiv Grotesk W01 Regular";
+    src: url("./AktivGroteskW01-regular/4337eeb93213c64896f2df77962a405e.eot"); /* IE9*/
+    src: url("./AktivGroteskW01-regular/4337eeb93213c64896f2df77962a405e.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./AktivGroteskW01-regular/4337eeb93213c64896f2df77962a405e.woff2") format("woff2"), /* chrome、firefox */
+    url("./AktivGroteskW01-regular/4337eeb93213c64896f2df77962a405e.woff") format("woff"), /* chrome、firefox */
+    url("./AktivGroteskW01-regular/4337eeb93213c64896f2df77962a405e.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("./AktivGroteskW01-regular/4337eeb93213c64896f2df77962a405e.svg#Aktiv Grotesk W01 Regular") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: "Aktiv Grotesk W01 Bold";
+    src: url("./AktivGroteskW01-bold/7616ca3c88797a238b74acd9bfce2222.eot"); /* IE9*/
+    src: url("./AktivGroteskW01-bold/7616ca3c88797a238b74acd9bfce2222.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./AktivGroteskW01-bold/7616ca3c88797a238b74acd9bfce2222.woff2") format("woff2"), /* chrome、firefox */
+    url("./AktivGroteskW01-bold/7616ca3c88797a238b74acd9bfce2222.woff") format("woff"), /* chrome、firefox */
+    url("./AktivGroteskW01-bold/7616ca3c88797a238b74acd9bfce2222.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("./AktivGroteskW01-bold/7616ca3c88797a238b74acd9bfce2222.svg#Aktiv Grotesk W01 Bold") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: "Aktiv Grotesk W01 XBold";
+    src: url("./AktivGroteskW01-xbold/e4e3b1d1ceb17cea6cafee4ccf8f8abd.eot"); /* IE9*/
+    src: url("./AktivGroteskW01-xbold/e4e3b1d1ceb17cea6cafee4ccf8f8abd.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./AktivGroteskW01-xbold/e4e3b1d1ceb17cea6cafee4ccf8f8abd.woff2") format("woff2"), /* chrome、firefox */
+    url("./AktivGroteskW01-xbold/e4e3b1d1ceb17cea6cafee4ccf8f8abd.woff") format("woff"), /* chrome、firefox */
+    url("./AktivGroteskW01-xbold/e4e3b1d1ceb17cea6cafee4ccf8f8abd.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("./AktivGroteskW01-xbold/e4e3b1d1ceb17cea6cafee4ccf8f8abd.svg#Aktiv Grotesk W01 XBold") format("svg"); /* iOS 4.1- */
+}

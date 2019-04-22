@@ -1,0 +1,42 @@
+//--==настройки до middle==--
+//@small <- с какого разрешения включается
+@small-container-width: auto; //<- ширина контентного блока
+@small-distance-between-columns: 10px; //<- расстояние между колонками
+@small-edge: 15px; //<- основной паддинг контента
+
+//--==настройки от middle до big==--
+@middle: 768px;
+@middle-container-width: auto;
+@middle-distance-between-columns: 12px;
+@middle-edge: 18px;
+
+//--==настройки от big до large==--
+@big: 1024px;
+@big-container-width: auto;
+@big-distance-between-columns: 20px;
+@big-edge: 42px;
+
+//--==настройки от large==--
+@large: 1200px;
+@large-container-width: 1110px;
+@large-distance-between-columns: 30px;
+//@small-edge
+
+
+////////Медиа запросы
+// спользовать @media @win-small-only { ... }
+@win-small-only: ~"(max-width: "@middle - 1~")";
+@win-small-down: ~"(max-width: "@middle - 1~")";
+
+@win-middle-only: ~"(min-width: "@middle~") and (max-width: "@big - 1~")";
+@win-middle-up: ~"(min-width: "@middle~")";
+@win-middle-down: ~"(max-width: "@big - 1~")";
+
+@win-big-only: ~"(min-width: "@big~") and (max-width: "@large - 1~")";
+@win-big-up: ~"(min-width: "@big~")";
+@win-big-down: ~"(max-width: "@large - 1~")";
+
+@win-large-only: ~"(min-width: "@large~")";
+@win-large-up: ~"(min-width: "@large~")";
+
+@win-between-media-big: ~"(min-width: "@middle~") and (max-width: "@large - 1~")";
